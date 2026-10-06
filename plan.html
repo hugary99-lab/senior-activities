@@ -5,7 +5,10 @@
 <section class="box profile" id="profile"><label>What I understood</label><div class="chips" id="chips"></div><div class="hint">You will be able to edit these details before they're saved in the full version.</div></section>
 <section class="box results" id="results"><label>Your suggested plan</label><div id="list"></div><div class="note">Always confirm schedule, eligibility and availability with the original provider before attending.</div></section>
 </main><script>
-const options=[
+const SUPABASE_URL="https://nisietxeomosxabixlba.supabase.co";
+const SUPABASE_KEY="sb_publishable_NyIIMF5hmpn7FZnyFPsWRw_W0vn4FDv";
+let options=[
+
 {name:"Chinese Mahjong",place:"Oak Ridges Community Centre · Richmond Hill",tags:["mahjong","chinese","social","low","afternoon"],why:"Seated, highly social and a strong fit when Mahjong or Chinese-language/cultural familiarity matters."},
 {name:"Mahjong",place:"McConaghy Centre · Richmond Hill",tags:["mahjong","social","low","afternoon"],why:"A low-physical-demand social activity with regular face-to-face interaction."},
 {name:"Tai Chi",place:"McConaghy Centre · Richmond Hill",tags:["fitness","gentle","low","morning"],why:"A gentle movement option for someone who wants light activity without strenuous exercise."},
@@ -13,6 +16,15 @@ const options=[
 {name:"Karaoke",place:"McConaghy Centre · Richmond Hill",tags:["music","social","low","afternoon"],why:"A lively choice for someone who enjoys music and meeting people."},
 {name:"Adult Game Day",place:"Vaughan Public Libraries · Vaughan",tags:["games","social","free","vaughan"],why:"A low-barrier local social option with no exercise requirement."}
 ];
+async function loadActivities(){
+ try{
+  const r=await fetch(SUPABASE_URL+"/rest/v1/activities?select=name,venue,city,intensity,social_level,languages,categories,recurrence_text,registration_type,source_url,status&status=in.(active,upcoming,waitlist,unclear)",{headers:{apikey:SUPABASE_KEY}});
+  if(!r.ok) throw new Error("activity request failed");
+  const rows=await r.json();
+  if(rows.length) options=rows.map(x=>({name:x.name,place:[x.venue,x.city].filter(Boolean).join(" · "),tags:[...(x.categories||[]),...(x.languages||[]),x.intensity,x.social_level].filter(Boolean).map(v=>String(v).toLowerCase()),why:[x.recurrence_text,x.registration_type].filter(Boolean).join(" · "),url:x.source_url}));
+ }catch(e){console.warn("Using local fallback activity set",e)}
+}
+loadActivities();
 function plan(){const raw=document.getElementById("story").value.trim();if(!raw){alert("Tell us a little about the person first.");return}const t=raw.toLowerCase(),p=[];const add=(cond,label)=>{if(cond)p.push(label)};
 add(t.includes("vaughan"),"Vaughan area");add(t.includes("richmond hill"),"Richmond Hill area");add(t.includes("mandarin")||t.includes("chinese"),"Chinese / Mandarin");add(t.includes("mahjong"),"Likes Mahjong");add(t.includes("music"),"Likes music");add(t.includes("social")||t.includes("meeting")||t.includes("people"),"Social connection");add(t.includes("gentle")||t.includes("low impact")||t.includes("low-impact")||t.includes("not strenuous"),"Gentle activity");add(t.includes("afternoon"),"Afternoons");add(t.includes("morning"),"Mornings");add(t.includes("doesn't drive")||t.includes("does not drive")||t.includes("no car"),"Transportation matters");add(t.includes("free")||t.includes("budget"),"Cost matters");if(!p.length)p.push("Personal preferences captured");
 document.getElementById("chips").innerHTML=p.map(x=>'<span class="chip">'+x+'</span>').join("");document.getElementById("profile").style.display="block";

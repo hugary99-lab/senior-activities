@@ -69,6 +69,18 @@ The product should help match by practical fit, not just category.
 - Netlify configuration is present.
 - Current README describes the product as a prototype for older adults, families, and caregivers.
 
+## Supabase backend status
+- Organization: GH Org (`wyhnwrbacyiigliatjqg`).
+- Project: **more-life-nearby** (`nisietxeomosxabixlba`), Canada Central (`ca-central-1`).
+- Dashboard: https://supabase.com/dashboard/project/nisietxeomosxabixlba
+- Organization projects: https://supabase.com/dashboard/org/wyhnwrbacyiigliatjqg
+- **Paused on 2026-10-07 at Gary's request; Supabase status verified as `INACTIVE`.**
+- Reason: free an active free-project slot in GH Org for a separate WayTold backend. The More Life Nearby project was paused, not repurposed for WayTold.
+- Existing database data remains saved. Supabase-dependent functionality is unavailable while paused. This does not pause the separately hosted static prototype.
+- Resume this existing project through its dashboard when More Life Nearby backend work resumes. Recheck free-project capacity and billing before restoring; restoring may require freeing another active slot or upgrading.
+- Related project repository: https://github.com/hugary99-lab/waytold-family-stories
+- WayTold backend creation is still pending; freeing the slot does not mean its backend has been created.
+
 ## Data acquisition direction
 Potential sources include:
 - Municipal program systems such as ACTIVE Net
@@ -122,3 +134,5 @@ Normalize source data into a common activity model with:
 - Established this file as the durable source of truth.
 - Reaffirmed caregiver decision-support positioning.
 - Recorded current validation gate as 30 records + 5 matching tests.
+
+- Paused More Life Nearby's Supabase project at Gary's request and verified `INACTIVE`; preserved the project reference, dashboard link, reason, and restoration guidance.

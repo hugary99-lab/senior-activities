@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-24",
+  "scope": "Richmond Hill, ON",
+  "classification": "source-confirmed events; capacity NOT confirmed; not live joinable inventory",
+  "provider": "City of Richmond Hill",
+  "provider_url": "https://www.richmondhill.ca/en/things-to-do/adults-55--events-and-activities.aspx",
+  "membership_source": "https://www.richmondhill.ca/en/things-to-do/ml-mcconaghy-centre.aspx",
+  "membership_requirement": "City says an Adult 55+ membership is required for all 55+ events, workshops, and drop-ins. Resident annual $35.70; non-resident annual $64.27. Confirm event-specific exceptions with provider.",
+  "records": [
+    {
+      "id": "RH-150772",
+      "name": "55+ Seniors Active Living Fair",
+      "date": "2026-11-18",
+      "time_local": "10:00–14:30",
+      "venue": "McConaghy Centre, Richmond Hill",
+      "advertised_event_fee_cad": 0,
+      "registration_code": "150772",
+      "capacity": "unverified",
+      "registration_status": "registration advertised; checkout not tested",
+      "eligibility": "Adults 55+; membership rule applies",
+      "joinability": "unconfirmed",
+      "notes": "Registration opened September 21; no successful registration observed."
+    },
+    {
+      "id": "RH-150958",
+      "name": "Holiday Candle Holder Craft",
+      "date": "2026-12-04",
+      "time_local": "13:00–15:00",
+      "venue": "Oak Ridges Community Centre, Richmond Hill",
+      "advertised_event_fee_cad": 5,
+      "registration_code": "150958",
+      "capacity": "unverified",
+      "registration_status": "registration code published; checkout not tested",
+      "eligibility": "Adults 55+; membership rule applies",
+      "joinability": "unconfirmed",
+      "notes": "Supplies and refreshments advertised; seating/accessibility not verified."
+    },
+    {
+      "id": "RH-150936",
+      "name": "55+ Lunch Program & Bingo",
+      "date": "2026-12-10",
+      "time_local": "12:30–16:00",
+      "venue": "McConaghy Centre, Richmond Hill",
+      "advertised_member_fee_cad": 10,
+      "advertised_nonmember_fee_cad": 15,
+      "registration_code": "150936",
+      "capacity": "unverified",
+      "registration_status": "registration required; spaces described as limited",
+      "eligibility": "Adults 55+; nonmember fee listed despite general membership rule—clarify before recommending",
+      "joinability": "unconfirmed",
+      "notes": "Fee/eligibility ambiguity must be resolved with provider."
+    }
+  ]
+}

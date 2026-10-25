@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-24",
+  "checked_at": "2026-10-25",
   "scope": "Richmond Hill, ON",
   "classification": "source-confirmed events; capacity NOT confirmed; not live joinable inventory",
   "provider": "City of Richmond Hill",
@@ -19,7 +19,17 @@
       "registration_status": "registration advertised; checkout not tested",
       "eligibility": "Adults 55+; membership rule applies",
       "joinability": "unconfirmed",
-      "notes": "Registration opened September 21; no successful registration observed."
+      "notes": "Registration opened September 21; no successful registration observed.",
+      "caregiver_match": {
+        "age_eligibility": "55+",
+        "membership_requirement": "required under provider's general 55+ rule; verify exceptions",
+        "mobility_accessibility": "not verified",
+        "transportation_access": "not verified",
+        "caregiver_attendance": "not verified",
+        "registration_capacity": "not verified",
+        "confirmed_joinable": false
+      },
+      "last_source_check": "2026-10-25"
     },
     {
       "id": "RH-150958",
@@ -33,7 +43,17 @@
       "registration_status": "registration code published; checkout not tested",
       "eligibility": "Adults 55+; membership rule applies",
       "joinability": "unconfirmed",
-      "notes": "Supplies and refreshments advertised; seating/accessibility not verified."
+      "notes": "Supplies and refreshments advertised; seating/accessibility not verified.",
+      "caregiver_match": {
+        "age_eligibility": "55+",
+        "membership_requirement": "required under provider's general 55+ rule; verify exceptions",
+        "mobility_accessibility": "not verified",
+        "transportation_access": "not verified",
+        "caregiver_attendance": "not verified",
+        "registration_capacity": "not verified",
+        "confirmed_joinable": false
+      },
+      "last_source_check": "2026-10-25"
     },
     {
       "id": "RH-150936",
@@ -48,7 +68,21 @@
       "registration_status": "registration required; spaces described as limited",
       "eligibility": "Adults 55+; nonmember fee listed despite general membership rule—clarify before recommending",
       "joinability": "unconfirmed",
-      "notes": "Fee/eligibility ambiguity must be resolved with provider."
+      "notes": "Fee/eligibility ambiguity must be resolved with provider.",
+      "caregiver_match": {
+        "age_eligibility": "55+",
+        "membership_requirement": "required under provider's general 55+ rule; verify exceptions",
+        "mobility_accessibility": "not verified",
+        "transportation_access": "not verified",
+        "caregiver_attendance": "not verified",
+        "registration_capacity": "not verified",
+        "confirmed_joinable": false
+      },
+      "last_source_check": "2026-10-25"
     }
-  ]
+  ],
+  "last_source_check": "2026-10-25",
+  "caregiver_match_fields_added": "2026-10-25",
+  "joinable_count": 0,
+  "joinability_definition": "Requires current session date, eligibility, total cost, registration channel, capacity/acceptance and mobility/accessibility suitability. Source listing alone does not pass."
 }

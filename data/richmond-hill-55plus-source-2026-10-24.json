@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-25",
+  "checked_at": "2026-10-26",
   "scope": "Richmond Hill, ON",
   "classification": "source-confirmed events; capacity NOT confirmed; not live joinable inventory",
   "provider": "City of Richmond Hill",
@@ -29,7 +29,8 @@
         "registration_capacity": "not verified",
         "confirmed_joinable": false
       },
-      "last_source_check": "2026-10-25"
+      "last_source_check": "2026-10-26",
+      "confirmed_joinable": false
     },
     {
       "id": "RH-150958",
@@ -53,7 +54,8 @@
         "registration_capacity": "not verified",
         "confirmed_joinable": false
       },
-      "last_source_check": "2026-10-25"
+      "last_source_check": "2026-10-26",
+      "confirmed_joinable": false
     },
     {
       "id": "RH-150936",
@@ -78,11 +80,14 @@
         "registration_capacity": "not verified",
         "confirmed_joinable": false
       },
-      "last_source_check": "2026-10-25"
+      "last_source_check": "2026-10-26",
+      "confirmed_joinable": false,
+      "eligibility_conflict": "Published non-member fee versus general 55+ membership requirement; obtain provider clarification before recommending."
     }
   ],
-  "last_source_check": "2026-10-25",
+  "last_source_check": "2026-10-26",
   "caregiver_match_fields_added": "2026-10-25",
   "joinable_count": 0,
-  "joinability_definition": "Requires current session date, eligibility, total cost, registration channel, capacity/acceptance and mobility/accessibility suitability. Source listing alone does not pass."
+  "joinability_definition": "Requires current session date, eligibility, total cost, registration channel, capacity/acceptance and mobility/accessibility suitability. Source listing alone does not pass.",
+  "source_check_notes": "2026-10-26: municipal 55+ event page still lists the three events and registration codes. No real-time capacity, successful checkout, mobility accommodations or caregiver attendance independently confirmed."
 }

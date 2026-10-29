@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-27",
+  "checked_at": "2026-10-29",
   "scope": "Richmond Hill, ON",
   "classification": "source-confirmed events; capacity NOT confirmed; not live joinable inventory",
   "provider": "City of Richmond Hill",
@@ -16,10 +16,10 @@
       "advertised_event_fee_cad": 0,
       "registration_code": "150772",
       "capacity": "unverified",
-      "registration_status": "registration advertised; checkout not tested",
+      "registration_status": "provider states registration is now open; remaining capacity and successful checkout unverified",
       "eligibility": "Adults 55+; membership rule applies",
       "joinability": "unconfirmed",
-      "notes": "Registration opened September 21; no successful registration observed.",
+      "notes": "Official Oct 29 source says registration is now open; do not infer remaining seats or accessible transport.",
       "caregiver_match": {
         "age_eligibility": "55+",
         "membership_requirement": "required under provider's general 55+ rule; verify exceptions",
@@ -29,7 +29,7 @@
         "registration_capacity": "not verified",
         "confirmed_joinable": false
       },
-      "last_source_check": "2026-10-27",
+      "last_source_check": "2026-10-29",
       "confirmed_joinable": false
     },
     {
@@ -54,7 +54,7 @@
         "registration_capacity": "not verified",
         "confirmed_joinable": false
       },
-      "last_source_check": "2026-10-27",
+      "last_source_check": "2026-10-29",
       "confirmed_joinable": false
     },
     {
@@ -80,14 +80,14 @@
         "registration_capacity": "not verified",
         "confirmed_joinable": false
       },
-      "last_source_check": "2026-10-27",
+      "last_source_check": "2026-10-29",
       "confirmed_joinable": false,
       "eligibility_conflict": "Published non-member fee versus general 55+ membership requirement; obtain provider clarification before recommending."
     }
   ],
-  "last_source_check": "2026-10-27",
+  "last_source_check": "2026-10-29",
   "caregiver_match_fields_added": "2026-10-25",
   "joinable_count": 0,
   "joinability_definition": "Requires current session date, eligibility, total cost, registration channel, capacity/acceptance and mobility/accessibility suitability. Source listing alone does not pass.",
-  "source_check_notes": "2026-10-27: official Richmond Hill Adults 55+ events page still lists Nov 18 Fair (150772), Dec 4 craft (150958), and Dec 10 Lunch & Bingo (150936); page explicitly says 55+ membership is required, but Bingo lists a non-member fee. No checkout, remaining capacity, accessibility or caregiver attendance confirmed."
+  "source_check_notes": "2026-10-29: official Richmond Hill 55+ event page reconfirmed Nov 18 fair, Dec 4 craft and Dec 10 Lunch & Bingo. Fair explicitly says registration is now open, but no capacity or successful enrollment was observed. General membership and Bingo nonmember-fee conflict still unresolved. No event passes caregiver joinability gate."
 }

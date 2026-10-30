@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-10-29",
+  "checked_at": "2026-10-30",
   "scope": "Richmond Hill, ON",
   "classification": "source-confirmed events; capacity NOT confirmed; not live joinable inventory",
   "provider": "City of Richmond Hill",
   "provider_url": "https://www.richmondhill.ca/en/things-to-do/adults-55--events-and-activities.aspx",
   "membership_source": "https://www.richmondhill.ca/en/things-to-do/ml-mcconaghy-centre.aspx",
-  "membership_requirement": "City says an Adult 55+ membership is required for all 55+ events, workshops, and drop-ins. Resident annual $35.70; non-resident annual $64.27. Confirm event-specific exceptions with provider.",
+  "membership_requirement": "General 55+ membership requirement applies to most programs; check event-specific exceptions. Nov 27 Christmas Celebration and Dec 6 Choir Concert explicitly require NO membership.",
   "records": [
     {
       "id": "RH-150772",
@@ -83,11 +83,62 @@
       "last_source_check": "2026-10-29",
       "confirmed_joinable": false,
       "eligibility_conflict": "Published non-member fee versus general 55+ membership requirement; obtain provider clarification before recommending."
+    },
+    {
+      "id": "RH-CHRISTMAS-2026-11-27",
+      "name": "55+ Seniors Christmas Celebration",
+      "date": "2026-11-27",
+      "time_local": "12:30–14:30",
+      "venue": "Richmond Hill Centre for the Performing Arts",
+      "advertised_event_fee_cad": 0,
+      "registration_code": null,
+      "capacity": "unverified",
+      "registration_status": "in-person ticket pickup advertised first-come first-served; ticket inventory not checked",
+      "eligibility": "Richmond Hill residents aged 55+; photo/other ID confirming residency required for each ticket; membership explicitly NOT required",
+      "joinability": "unconfirmed",
+      "notes": "Maximum two tickets per senior, with ID required for both. Confirm tickets before recommending. Official page expressly exempts this event from 55+ membership.",
+      "caregiver_match": {
+        "age_eligibility": "55+ Richmond Hill residents",
+        "membership_requirement": "not required (explicit exception)",
+        "mobility_accessibility": "not verified",
+        "transportation_access": "not verified",
+        "caregiver_attendance": "not verified; two tickets maximum and ID for both",
+        "registration_capacity": "not verified",
+        "confirmed_joinable": false
+      },
+      "last_source_check": "2026-10-30",
+      "confirmed_joinable": false
+    },
+    {
+      "id": "RH-CHOIR-2026-12-06",
+      "name": "55+ Choir Concert – Winter Concert",
+      "date": "2026-12-06",
+      "time_local": "14:00 (end time unverified)",
+      "venue": "McConaghy Centre, Richmond Hill",
+      "advertised_advance_fee_cad": 5,
+      "advertised_door_fee_cad": 6,
+      "registration_code": "150632",
+      "capacity": "unverified",
+      "registration_status": "advance and door pricing advertised; no capacity or completed registration verified",
+      "eligibility": "All ages; membership explicitly NOT required",
+      "joinability": "unconfirmed",
+      "notes": "Official event page expressly states open to all ages with no membership. Verify accessible seating and ticket availability.",
+      "caregiver_match": {
+        "age_eligibility": "all ages",
+        "membership_requirement": "not required (explicit exception)",
+        "mobility_accessibility": "not verified",
+        "transportation_access": "not verified",
+        "caregiver_attendance": "not verified",
+        "registration_capacity": "not verified",
+        "confirmed_joinable": false
+      },
+      "last_source_check": "2026-10-30",
+      "confirmed_joinable": false
     }
   ],
-  "last_source_check": "2026-10-29",
+  "last_source_check": "2026-10-30",
   "caregiver_match_fields_added": "2026-10-25",
   "joinable_count": 0,
   "joinability_definition": "Requires current session date, eligibility, total cost, registration channel, capacity/acceptance and mobility/accessibility suitability. Source listing alone does not pass.",
-  "source_check_notes": "2026-10-29: official Richmond Hill 55+ event page reconfirmed Nov 18 fair, Dec 4 craft and Dec 10 Lunch & Bingo. Fair explicitly says registration is now open, but no capacity or successful enrollment was observed. General membership and Bingo nonmember-fee conflict still unresolved. No event passes caregiver joinability gate."
+  "source_check_notes": "2026-10-30: official city page adds two explicit membership exceptions: Nov 27 Christmas Celebration (55+ Richmond Hill residents, in-person ticket pickup and ID; no membership), Dec 6 Choir Concert (all ages; no membership). Both capacity unverified. Existing 3 remain capacity unverified; general membership rule must not override event-specific exceptions."
 }
